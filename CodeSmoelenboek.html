@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+
+<style>
+.abcSelect{
+    background-color: cyan;
+}
+
+.nameList{
+    background-color: grey;
+}
+
+.buttonA:checked ~ [class^="namea"] {
+    background-color: red;
+}
+
+.buttonB:checked ~ [class^="nameb"] {
+    background-color: red;
+}
+
+.buttonC:checked ~ [class^="namec"] {
+    background-color: red;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="abcSelect">
+    Naam beginnend met de letter <br>
+    <input class="buttonA" type="radio" name="StartingLetter" value="A"> A 
+    <input class="buttonB" type="radio" name="StartingLetter" value="B"> B 
+    <input class="buttonC" type="radio" name="StartingLetter" value="C"> C 
+    <br> <br>
+    <div class="namealbert"> Albert </div> <br>
+    <div class="namecees"> Cees </div> <br>
+    <div class="namecorneel"> Corneel </div> <br>
+    <div class="namejacques"> Jacques </div> <br>
+</div>
+
+</body>
+
+</html>
