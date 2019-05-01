@@ -5,26 +5,45 @@
 
 <style>
 .abcSelect{
-    background-color: cyan;
+    background-color: rgb(228, 194, 194);
 }
 
-[class^="name"] {
+.personContainer{
+    background-color: cyan;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: repeat(30px);
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.entry{
+    background-color: blue;
+    justify-self: center;
+    padding: 5px;
+}
+
+[id^="name"] {
     display: none;
 }
 
-.buttonA:checked ~ [class^="namea"] {
+/* [class~="button"] {
+    background-color: red;
+} */
+
+.buttonA:checked ~* [id^="namea"] {
     display: block;
 }
 
-.buttonB:checked ~ [class^="nameb"] {
+.buttonB:checked ~* [id^="nameb"] {
     display: block;
 }
 
-.buttonC:checked ~ [class^="namec"] {
+.buttonC:checked ~* [id^="namec"] {
     display: block;
 }
 
-.buttonAll:checked ~ [class^="name"] {
+.buttonAll:checked ~* [id^="name"] {
     display: block;
 }
 
@@ -32,22 +51,27 @@
 
 </head>
 
-
 <body>
-
-    <!-- this is a comment to verify is I actually updated my file -->
 
 <div class="abcSelect">
     Name starting with the letter <br>
     <input class="buttonA" type="radio" name="StartingLetter" value="A"> A 
     <input class="buttonB" type="radio" name="StartingLetter" value="B"> B 
     <input class="buttonC" type="radio" name="StartingLetter" value="C"> C | 
-    <input class="buttonAll" type="radio" name="StartingLetter" value="All" checked> Show all
-    <br> <br>
-    <div class="namealbert"> Albert </div> 
-    <div class="namecees"> Cees </div>
-    <div class="namecorneel"> Corneel </div>
-    <div class="namejacques"> Jacques </div>
+    <input class="buttonAll" type="radio" name="StartingLetter" value="All" checked> Show all 
+    <div class="personContainer">
+        <div class="entry" id="namealbert"> Albert </div> 
+        <div class="entry" id="namecees"> Cees </div>
+        <div class="entry" id="namecorneel"> Corneel </div>
+        <div class="entry" id="namejacques"> Jacques </div>
+        <div class="entry" id="namefrank"> Frank </div>
+        <div class="entry" id="nameadrian"> Adrian </div>
+        <div class="entry" id="nameandrew"> Andrew </div>
+        <div class="entry" id="namebertrand"> Bertrand </div>
+        <div class="entry" id="namequentin"> Quentin </div>
+        <div class="entry" id="namebrent"> Brent </div>
+        <div class="entry" id="nameorlando"> Orlando </div>
+    </div>
 </div>
 
 </body>
