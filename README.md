@@ -9,6 +9,12 @@ Planning:
 - - - First attempt failed. Removed to branches and reorganised branch structure for clarity. Will give this a second try. 
 - - - Second attempt succeeded. 
 - - - Updating README locally for practice purposes.
-- 4 [ ] update project to use css grid without altering functionality significantly.
+- 4 [v] update project to use css grid without altering functionality significantly.
+- 5 [ ] implement text form to replace radio dials
+- 6 [ ] implement single filter category
+- 7 [ ] implement multiple, overlapping filter categories
+- 8 [ ] clean up styling
+
+
 
 long term goal: using text-form instead of radio dials to set filtering-parameters.
